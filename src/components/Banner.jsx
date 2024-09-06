@@ -9,12 +9,12 @@ import brand6 from "../assets/banner-brand/logo-6.png";
 const Banner = () => {
   return (
     <section id="about" className="bg-white mt-2  lg:pt-12 ">
-      <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24  ">
+      <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-24   ">
         <div className="flex flex-col md:flex-row items-center gap-6">
           {/* left side */}
           <div className="md:w-1/2 ">
             <div className="w-full  xl:w-9/12 lg:leading-loose ">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font bold text-secondary mb-4">
+              <h1 className="text-3xl font-medium md:font-semibold sm:text-4xl lg:text-5xl font bold text-secondary mb-4">
                 Empowering Businesses to Thrive in the Digital World
               </h1>
               <p className="text-gray-600 mb-6">
