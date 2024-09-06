@@ -35,7 +35,7 @@ const Navbar = () => {
 
         {/* nav items */}
         <div className="hidden md:flex">
-          <ul className="flex items-center md:gap-1 lg:gap-8">
+          <ul className="flex items-center  lg:gap-8">
             {menuItems.map((item, index) => (
               <li key={index}>
                 <a
@@ -44,7 +44,7 @@ const Navbar = () => {
                     activeItem == item.name
                       ? "bg-primary underline underline-offset-4"
                       : " "
-                  } xl:text-lg p-2 rounded-md transition-all duration-300 `}
+                  } md:text-sm lg:text-base xl:text-lg p-2  lg:p-2 rounded-md transition-all duration-300 `}
                   href={item.href}
                 >
                   {item.name}
@@ -53,7 +53,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="border xl:text-lg border-black px-4 py-2  rounded-md hover:bg-primary hover:border-primary transition-all duration-300"
+              className="border xl:text-lg border-black px-2 lg:px-4 py-2  rounded-md hover:bg-primary hover:border-primary transition-all duration-300"
             >
               Request a quote
             </a>

@@ -13,8 +13,8 @@ const Banner = () => {
         <div className="flex flex-col md:flex-row items-center gap-6">
           {/* left side */}
           <div className="md:w-1/2 ">
-            <div className="xl:w-9/12 lg:leading-loose ">
-              <h1 className="text-4xl lg:text-5xl font bold text-secondary mb-4">
+            <div className="w-full  xl:w-9/12 lg:leading-loose ">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font bold text-secondary mb-4">
                 Empowering Businesses to Thrive in the Digital World
               </h1>
               <p className="text-gray-600 mb-6">
@@ -39,7 +39,7 @@ const Banner = () => {
         </div>
 
         {/* brand slider logo */}
-        <div className="pt-12 lg:pt-24 overflow-hidden w-full">
+        <div className="pt-10  overflow-hidden w-full">
           <div className=" flex justify-between space-x-6 md:space-x-12 items-center animate-marquee">
             <img className="h-10 md:h-12" src={brand1} alt="brand-img" />
             <img className="h-10 md:h-12" src={brand2} alt="brand-img" />
