@@ -19,14 +19,14 @@ const Navbar = () => {
     { name: "Testimonials", href: "#testimonials" },
   ];
   return (
-    <nav className="">
-      <div className="relative z-20 h-16 max-w-[1440px] flex justify-between mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="shadow-md">
+      <div className="relative z-20 h-16 max-w-[1440px] mx-auto flex justify-between  px-4 sm:px-6 lg:px-8">
         {/* logo */}
         <div className="flex justify-center gap-1 items-center">
           <a href="/">
             <img
               className="h-8 w-full"
-              src="/logo/logo-avalaunch-icon.png"
+              src="./logo/logo-avalaunch-icon.png"
               alt="logo"
             />
           </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="border xl:text-lg border-black px-4 py-2  rounded-md hover:bg-primary transition-all duration-300"
+              className="border xl:text-lg border-black px-4 py-2  rounded-md hover:bg-primary hover:border-primary transition-all duration-300"
             >
               Request a quote
             </a>
