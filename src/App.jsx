@@ -4,6 +4,7 @@ import CaseStudies from "./components/CaseStudies";
 import Navbar from "./components/Navbar";
 import Proposal from "./components/Proposal";
 import Services from "./components/Services";
+import WorkingProcess from "./components/WorkingProcess";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Banner />
       <Services/>
       <Proposal />
-      <CaseStudies/>
+      <CaseStudies />
+      <WorkingProcess/>
     </div>
   );
 }

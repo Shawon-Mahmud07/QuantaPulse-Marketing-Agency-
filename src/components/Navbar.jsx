@@ -41,9 +41,7 @@ const Navbar = () => {
                 <a
                   onClick={() => handleItemClick(item.name)}
                   className={`text-black ${
-                    activeItem == item.name
-                      ? "bg-primary "
-                      : " "
+                    activeItem == item.name ? "bg-primary " : " "
                   } md:text-sm lg:text-base xl:text-lg p-2  lg:p-2 rounded-md transition-all duration-300 `}
                   href={item.href}
                 >
@@ -53,7 +51,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="border xl:text-lg border-black px-2 lg:px-4 py-2  rounded-md hover:bg-primary hover:border-primary transition-all duration-300"
+              className="border md:text-sm  xl:text-lg border-black px-2 lg:px-4 py-2  rounded-md hover:bg-primary hover:border-primary transition-all duration-300"
             >
               Request a quote
             </a>
