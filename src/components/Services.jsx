@@ -4,14 +4,14 @@ import icon2 from "../assets/services-img/Icon2.png";
 
 const Services = () => {
   return (
-    <section id="services" className=" md:pt-12 pb-8 md:pb-16 bg ">
+    <section id="services" className=" pt-12 pb-8 md:pb-16 bg ">
       <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-12 ">
         {/* service description */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 md:w-11/12 lg:w-7/12 mb-12">
           <h2 className="tracking-widest rounded-md py-2 px-4 bg-primary text-2xl font-bold ">
             Services
           </h2>
-          <p className="text-justify ">
+          <p className=" text-center md:text-justify ">
             At our digital marketing agency, we provide a variety of services
             designed to drive business growth and success in the online space.
             Our offerings include:

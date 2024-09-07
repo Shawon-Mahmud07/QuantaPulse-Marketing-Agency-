@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="/">
             <img
               className="h-8 w-full"
-              src="./logo/logo-avalaunch-icon.png"
+              src="/logo/logo-avalaunch-icon.png"
               alt="logo"
             />
           </a>

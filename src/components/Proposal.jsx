@@ -4,7 +4,7 @@ const Proposal = () => {
   return (
     <section className=" py-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="relative bg-[#D9D9D9] rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-6 py-6 px-4 sm:p-6 md:px-8 lg:p-12">
+        <div className="relative bg-[#D9D9D9] rounded-md sm:rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-6 py-6 px-4 sm:p-6 md:px-8 lg:p-12">
           {/* left side */}
           <div className="space-y-4 md:space-y-6 text-center md:text-start ">
             <h2 className="text-2xl md:text-3xl font-bold  text-gray-900">
