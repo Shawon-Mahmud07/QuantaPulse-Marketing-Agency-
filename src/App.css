@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);

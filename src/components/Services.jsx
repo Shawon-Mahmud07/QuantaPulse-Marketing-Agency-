@@ -4,7 +4,7 @@ import icon2 from "../assets/services-img/Icon2.png";
 
 const Services = () => {
   return (
-    <section id="services" className=" md:pt-12 pb-16 bg ">
+    <section id="services" className=" md:pt-12 pb-8 md:pb-16 bg ">
       <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-12 ">
         {/* service description */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 md:w-11/12 lg:w-7/12 mb-12">
@@ -34,9 +34,7 @@ const Services = () => {
                 </button>
                 <p
                   className={`${
-                    item.backgroundColor === "bg-[#000000]"
-                      ? "text-white"
-                      : "text-black"
+                    item.backgroundColor === "bg-[#000000]"? "text-white" : "text-black"
                   }`}
                 >
                   {item.description}
@@ -69,7 +67,7 @@ const Services = () => {
                 </div>
               </div>
               {/* right side */}
-              <div className="flex-1 order-first sm:order-last md:order-first xl:order-last">
+              <div className="flex-1 order-first sm:order-last lg:order-first xl:order-last">
                 <img
                   className="object-contain w-full max-h-48"
                   src={item.image}

@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./components/banner";
 import Navbar from "./components/Navbar";
+import Proposal from "./components/Proposal";
 import Services from "./components/Services";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Banner />
       <Services/>
+      <Proposal/>
     </div>
   );
 }

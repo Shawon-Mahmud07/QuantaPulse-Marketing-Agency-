@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "Testimonials", href: "#testimonials" },
   ];
   return (
-    <nav className="shadow-md">
+    <nav className="shadow-md z-50 bg-white sticky top-0">
       <div className="relative z-20 h-16 max-w-[1440px] mx-auto flex justify-between  px-4 sm:px-6 lg:px-12">
         {/* logo */}
         <div className="flex justify-center gap-1 items-center">
@@ -42,7 +42,7 @@ const Navbar = () => {
                   onClick={() => handleItemClick(item.name)}
                   className={`text-black ${
                     activeItem == item.name
-                      ? "bg-primary underline underline-offset-4"
+                      ? "bg-primary "
                       : " "
                   } md:text-sm lg:text-base xl:text-lg p-2  lg:p-2 rounded-md transition-all duration-300 `}
                   href={item.href}
