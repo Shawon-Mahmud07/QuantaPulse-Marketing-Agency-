@@ -4,7 +4,7 @@ import PlusIcon from "../assets/plus-icon.png";
 import MinusIcon from "../assets/minus-icon.png";
 
 const WorkingProcess = () => {
-  const [activeItem, setActiveItem] = useState(null);
+  const [activeItem, setActiveItem] = useState(0);
   const handleClickItem = (index) => {
     setActiveItem(index === activeItem ? null : index);
   };
@@ -16,10 +16,11 @@ const WorkingProcess = () => {
           <h2 className="tracking-wide md:tracking-widest rounded-md py-2 px-4 bg-primary text-2xl font-bold ">
             Our Working Process
           </h2>
-          <p className="text-center  md:text-justify  ">
-            Step-by-Step Guide to Achieving <br />
+          <p className="text-center  md:text-justify">
+            Step-by-Step Guide to Achieving <br/>
             Your Business Goals
           </p>
+          
         </div>
 
         {/* Question and Answer Accordion */}
@@ -28,7 +29,7 @@ const WorkingProcess = () => {
             <div
               onClick={() => handleClickItem(index)}
               key={index}
-              className={`cursor-pointer rounded-3xl md:rounded-[48px] shadow-md shadow-gray-900 py-4 md:py-8 ${
+              className={`transition-all duration-800 ease-in cursor-pointer rounded-3xl md:rounded-[48px] shadow-md shadow-gray-900 py-4 md:py-8 ${
                 activeItem === index ? "bg-primary" : " "
               }`}
             >
@@ -39,9 +40,17 @@ const WorkingProcess = () => {
                 </div>
                 <div>
                   {activeItem === index ? (
-                    <img className="size-7 sm:size-10" src={MinusIcon} alt="MinusIcon" />
+                    <img
+                      className="size-7 sm:size-10"
+                      src={MinusIcon}
+                      alt="MinusIcon"
+                    />
                   ) : (
-                    <img className="size-7 sm:size-10" src={PlusIcon} alt="PlusIcon" />
+                    <img
+                      className="size-7 sm:size-10"
+                      src={PlusIcon}
+                      alt="PlusIcon"
+                    />
                   )}
                 </div>
               </div>
@@ -49,7 +58,7 @@ const WorkingProcess = () => {
               {/* Answer */}
               {activeItem === index && (
                 <div className="pt-6 md:pt-2 ">
-                  <p className="pt-4 font-lg  md:font-medium mx-4 md:mx-12 transition-all border-t-2 border-gray-800 duration-800 md:text-justify">
+                  <p className="pt-4 font-lg  md:font-medium mx-4 md:mx-12  border-t-2 border-gray-800  md:text-justify">
                     {item.answer}
                   </p>
                 </div>
